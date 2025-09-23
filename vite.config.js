@@ -7,7 +7,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://scraper-backend-1-xiwk.onrender.com',
+        target: 'https://scraper-backend-plum.vercel.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }
